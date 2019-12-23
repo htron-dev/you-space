@@ -1,6 +1,6 @@
 {
   "name": "@youspace/core",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "> TODO: description",
   "author": "henrique-manjaro <henriqueoliwork@gmail.com>",
   "homepage": "",
@@ -23,11 +23,15 @@
     "build": "npm run clean && tsc",
     "clean": "tsc -b --clean"
   },
-  "gitHead": "493c62e5a75ad2bbfb3b60c4a25dce2b353e0a8e",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "@types/cors": "^2.8.6",
     "@types/express": "^4.17.2",
     "@types/node": "^12.12.21",
     "typescript": "^3.7.4"
-  }
+  },
+  "gitHead": "493c62e5a75ad2bbfb3b60c4a25dce2b353e0a8e"
 }
