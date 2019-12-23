@@ -1,6 +1,6 @@
 {
   "name": "@youspace/core",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "> TODO: description",
   "author": "henrique-manjaro <henriqueoliwork@gmail.com>",
   "homepage": "",
@@ -12,7 +12,7 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.com/",
