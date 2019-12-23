@@ -1,13 +1,13 @@
 {
   "name": "@youspace/core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "> TODO: description",
   "author": "henrique-manjaro <henriqueoliwork@gmail.com>",
   "homepage": "",
   "license": "MIT",
   "main": "dist/index.js",
   "directories": {
-    "lib": "lib",
+    "dist": "dist",
     "test": "__tests__"
   },
   "files": [
@@ -20,5 +20,11 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "gitHead": "87690e0acffef59ffa2c8145c306100a67901845"
+  "gitHead": "493c62e5a75ad2bbfb3b60c4a25dce2b353e0a8e",
+  "dependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.2",
+    "@types/node": "^12.12.21",
+    "typescript": "^3.7.4"
+  }
 }
