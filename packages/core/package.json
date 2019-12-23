@@ -1,6 +1,6 @@
 {
   "name": "@ys/core",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "henrique-manjaro <henriqueoliwork@gmail.com>",
   "homepage": "",
@@ -14,9 +14,11 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.com/"
+    "registry": "https://registry.npmjs.com/",
+    "access": "public"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
-  }
+  },
+  "gitHead": "a81a0c6a93a5610204981f4f2d3e83a77a07f74e"
 }
