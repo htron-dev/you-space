@@ -5,7 +5,7 @@
 ## Usage
 
 ```
-const core = require('@ys/core');
+const core = require('@youspace/core');
 
 // TODO: DEMONSTRATE API
 ```
