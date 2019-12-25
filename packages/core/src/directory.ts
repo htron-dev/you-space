@@ -1,27 +1,32 @@
 import path from "path";
+import { AppDirectories, DirectoryNames, ysDirectoryFactory } from "./index";
 
-export type DirectoryNames = "uploads" | "root";
 
-export type AppDirectories = {
-    root: string,
-    uploads: string
-}
+/**
+ *  Handle the directories of application
+ */
+export function ysDirectory(rootPath?: string): ysDirectoryFactory {
+    
+    // if is undefined trigger a error
+     if(!rootPath){
+        throw new Error("Can't find root path");
+    }
+    
+     // set the directories paths
+     const directories: AppDirectories = {
+        root: rootPath,
+        uploads: `${rootPath}/ys_content/uploads`
+    };
 
-export default class YsDirectory {
-    private directories: AppDirectories;
-    constructor(rootPath: string | undefined){
-
-        if(!rootPath){
-            throw new Error("Can't find root path");
-        }
-
-        this.directories = {
-            root: rootPath,
-            uploads: `${rootPath}/ys_content/uploads`
-        };
+    /**
+     * Get a directory paths by name
+     * @param directory name of directory
+    */
+    function getDirectory(directory: DirectoryNames){
+        return directories[directory];
     }
 
-    getDirectory(directory: DirectoryNames){
-        return this.directories[directory];
+    return {
+        getDirectory
     }
 }

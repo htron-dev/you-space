@@ -28,9 +28,13 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.7",
     "@types/cors": "^2.8.6",
     "@types/express": "^4.17.2",
-    "@types/node": "^12.12.21",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.1.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
     "typescript": "^3.7.4"
   },
   "gitHead": "493c62e5a75ad2bbfb3b60c4a25dce2b353e0a8e"

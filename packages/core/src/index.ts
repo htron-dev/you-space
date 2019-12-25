@@ -1,5 +1,7 @@
 import YsBoot from "./aplication";
 
-const ysApp: YsBoot = new YsBoot();
+export * from "./types";
+export * from "./aplication";
+export * from "./directory";
 
-export default ysApp.app;
+export default new YsBoot();
