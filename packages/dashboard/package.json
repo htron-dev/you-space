@@ -6,6 +6,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build && tsc -b ys-dashboard",
+    "build:dev": "vue-cli-service build --mode=development && tsc -b ys-dashboard",
     "lint": "vue-cli-service lint",
     "lint:fix": "vue-cli-service lint --fix",
     "test": "vue-cli-service test:unit --watch --recursive ./__tests__"
@@ -18,6 +19,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "@mdi/font": "^3.6.95",
+    "@vue/composition-api": "^0.3.4",
     "core-js": "^3.4.3",
     "roboto-fontface": "*",
     "vue": "^2.6.10",

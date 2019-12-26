@@ -1,32 +1,40 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <ys-app-drawer
+      app
+      v-model="state.drawer" />
+
+    <ys-app-bar app />
+
+    <v-content>
+      <v-container fluid fill-height>
+        <router-view></router-view>
+      </v-container>
+    </v-content>
+
+    <ys-app-footer app />
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang="ts">
+import { reactive, createComponent } from "@vue/composition-api";
 
-#nav {
-  padding: 30px;
+export default createComponent({
+    name: "Ysapp",
+    components: {
+        YsAppDrawer: () => import("@/components/YsAppDrawer/index.vue"),
+        YsAppBar: () => import("@/components/YsAppBar/index.vue"),
+        YsAppFooter: () => import("@/components/YsAppFooter/index.vue")
+    },
+    setup () {
+        const state = reactive({
+            drawer: true
+        });
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+        return {
+            state
+        };
     }
-  }
-}
-</style>
+});
+
+</script>

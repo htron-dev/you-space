@@ -35,7 +35,7 @@
     "__tests__/**/*.tsx",    
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
   ],
   "references": [
     { 

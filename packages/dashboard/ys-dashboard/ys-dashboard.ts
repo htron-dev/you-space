@@ -11,24 +11,14 @@ export default class YsDashborad {
         this.registerRoutes();
     }
     
-    registerRoutes(){
-        const currentPath = path.dirname(path.resolve("@ys/dashboard/package.json"));
-        // console.log(process.env.PWD)
-        // console.log(currentPath)
-        // console.log(path.dirname(path.resolve("./")))
-        console.log("read")
-        // console.log(require('../dist/public/index.html'))
-        // console.log(process.cwd())
-        // fs.readFileSync(`${process.env.PWD}/dist/public/index.html`)
-        if (fs.existsSync(`${process.cwd()}/node_modules/@youspace/dashboard/dist/public`)){
-            console.log(fs.readdirSync(`${process.cwd()}//node_modules/@youspace/dashboard/dist/public`))
+    registerRoutes(){        
+        
+        if (fs.existsSync(`${process.cwd()}/node_modules/@youspace/dashboard/dist/public`)){            
             this.app.use(this.route, express.static(`${process.cwd()}//node_modules/@youspace/dashboard/dist/public`));
-        } else {
-            console.log(fs.readdirSync(`${process.cwd()}/dist/public`))
+        } else {            
             this.app.use(this.route, express.static(`${process.cwd()}/dist/public`));
         }
-        console.log(process.cwd())
-        // console.log(path.dirname(__dirname))
-        // console.log("[@youspace] dashboard register in ", this.route);
+
+        console.info("[@youspace] dashboard register in ", this.route);
     }
 }
