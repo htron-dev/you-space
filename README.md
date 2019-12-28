@@ -41,7 +41,7 @@ But if you wanna take a look at the packages, they work individually so you can 
 
 ## Contributing
 
-Please read the page [Contributing](https://hawk-developments.github.io/you-space/) to see the steps to contribute of project.
+Please read the page [Contributing](https://hawk-developments.github.io/you-space/docs/contributing) to see the steps to contribute of project.
 
 ⚠️ Still in so early development so do not have a good setup for development
 

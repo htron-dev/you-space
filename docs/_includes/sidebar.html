@@ -1,0 +1,59 @@
+<div class="p-4 pt-5">
+	<header>
+		<h3 class="title">
+			<a href="{{ site.url }}">
+				{{ site.title }}
+			</a>
+		</h3>
+	</header>
+	<ul class="list-unstyled menu">
+		{% for post in site.pages %}
+			{% if post.layout == "page" %}	
+				{% unless post.exclude.sidebar %}
+					<li class="{% if page.url == post.url %}active{% endif %}">		
+						<a class="nav-link" href="{{ post.url }}">
+							{{ post.title }}
+						</a>					
+					</li>
+				{% endunless %}
+			{% endif %}
+		{% endfor %}
+
+		{% for collection in site.collections %}
+			{% assign size =  collection.docs | size %}
+			{% if collection.label != "posts" and size > 0 %}
+			<li>
+				<a
+					data-toggle="collapse"
+					data-target="#menu-{{ collection.label }}"					
+					class="nav-link" href="{{ collection.label }}">
+					{{ collection.label }}
+				</a>	
+				<ul
+					class="collapse list-unstyled {%if page.collection == collection.label %}show{% endif %}"
+					id="menu-{{ collection.label }}">
+					{% for doc in site.[collection.label] %}					
+					{% unless doc.exclude.sidebar %}
+					<li class="{% if doc.url == doc.url %}active{% endif %}">
+								<a class="nav-link" href="{{ doc.url }}">
+									{{ doc.title}}
+								</a>					
+							</li>
+						{% endunless %}
+					{% endfor %}
+				</ul>				
+			</li>								
+			{% endif %}			
+		{% endfor %}
+	</ul>
+	
+</div>
+
+{% if site.author.bio %}
+<div id="bio" class="text-center">
+	{{ site.author.bio }}
+</div>
+{% endif %}
+
+
+

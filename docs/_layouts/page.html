@@ -1,0 +1,14 @@
+---
+  layout: default  
+---
+
+{% include breadcrumb.html %}
+<article class="card">  
+  <div class="card-body p-5">
+    <h2 class="text-primary card-title font-weight-bold">{{ page.title }}</h2>
+    <!-- {% if page.lastUpdate %}
+      <span class="d-block my-3">{{ page.lastUpdate | date_to_long_string }}</span>
+    {% endif %} -->
+    {{ content }}
+  </div>
+</article>

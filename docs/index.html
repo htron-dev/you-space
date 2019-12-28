@@ -1,0 +1,29 @@
+---
+layout: page
+tagline:
+exclude:
+    sidebar: true
+---
+
+
+<ul id="documents">
+  {% for doc in site.pages %}
+    {% if doc.layout == "page" %}
+      {% unless doc.exclude.sidebar %}
+        <li>
+          <a class="nav-link" href="{{ doc.url }}">
+            {{ doc.title }}
+          </a>					
+        </li>  
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  {% for doc in site.docs %}
+    <li>
+      <a class="nav-link" href="{{ doc.url }}">
+        {{ doc.title }}
+      </a>					
+    </li>  
+  {% endfor %}
+</ul>	
+
