@@ -1,0 +1,44 @@
+I"¼<p>The project is in early development so stil do not have a good way to setup an enviroment development.</p>
+
+<p>But you can clone the main repository and take a look in the packages</p>
+
+<ul>
+  <li>
+    <p>1 - First step clone the main repository in <a href="https://github.com/hawk-developments/you-space">you-space</a></p>
+  </li>
+  <li>
+    <p>2 - Link the package you wanna use to another project
+Example:</p>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    npm link &lt;path to youspace&gt;/packages/media
+</code></pre></div></div>
+
+<ul>
+  <li>3 - use import and you ready to use the package</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   import YsMedia from "@youspace/media"
+   import express from "express"
+   
+   cons app = express();
+   cons media = YsMedia("uploads");
+
+   app.use(media.app);
+   
+   app.get("/videos", (req, res) =&gt; {
+        
+        const videos = media.getFiles() # &lt;- get all the files in folder of uploads
+        
+        res.send(JSON.stringify(videos));
+   });
+
+   app.listen(3000, () =&gt; {
+       conso.log("Server running")
+   })
+
+
+</code></pre></div></div>
+
+:ET

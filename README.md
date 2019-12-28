@@ -1,62 +1,60 @@
 # You-space
-Alternative of Youtube to deal with videos and channels.
+Platform opensource to be an alternative of Youtube to deal with videos and channels.
 
-warning: in so early development
+Is not like youtube is more like a wordpress of videos.
 
-## The project
+> **Important:** the ideia is not beat the mainstream platforms but gives to the creators a more freedom way to share your content with your public, this is why I also will plannig some a integration with these platforms in the future, to the creator have the best of both options.
 
-The ideia is create a sofware for anyone setup a entire platform  of videos in any server that he want. Is the same idea of wordpress but for videos.
+⚠️ Warning: in so early development
 
-Well for simple explanation the scope of project is:
+## Getting started
 
-* Platform
-    * Have  a sofware to setup the platform in a normal server.
-    * This platform will have some options of monitization like member vips, sponser ads, integration with adsense, some comercias in the video, etc.
-    * System of notifications to send to the users.
-    * System of upload of videos.
-    * system of Lives
-    * Custom Themes
-    * The will have the power of anything in the platform.
-    * Integrations with others instances of the platform.
+Still do not have a setup ready, i needed finish some of the packages before have a good development enviroment.
 
-* Api
-    * The platform will also create an api with a map of all videos, users, tags, playlists of the this instalation, with authentication and security pratics of cource.
-    * The api will also give the posibitily to create the front-end with any tecnology of wanted that will be the themes of the platform.
+But if you wanna take a look at the packages, they work individually so you can play with they.
 
-* Integrate other platforms: you-tube, twitch, discord
-    
-    * Well this will be nice if works XD, the ideia is have a very good integration with others platforms, that the user can do all that they need in just one place.
-    * Get all content of other platforms and integreate with they channel in his own server, and all content will be merged in just one place and with a very well organization.
-    * upload videos and start lives using the same tools of the platform but with diferent source.
+> Tip: all ready packages have a readmen with the use steps to use
 
-* Main Globa site
-    * Well this is somehing for to away in the future
-    * Will like a reddit that merge all other instances in one place, if was allowed and wanted of course.
-    * The global site is to make easy to the the users of the word to find the other channels in the internet, recomendations, etc...
-    * So when the creator wanna be in the global site he will have a channel in the global site that consume the api of his instance.
-    * The global site will have a very well communication with the instances to deal with diferents versions, vip members and things like that.
+## Prerequisites
 
-### What was the Inpiration?
+⚠️ Still in so early development do not have a setup
 
-* Well is not secret that You-tube have a lot of problems, this is something that a lot of creators have to deal daily
-* Is also have a limitation of content, because all content have to be "Family friend", so you can't create content that go away of this, even if is something that your public wanted
-* Is hard to You-tube to deal with all posible situations because any political of some country can create a new lay that affects the entire platform.
-* Becuase deal with server side videos are so hard, create a platform that can hadle all this data a very good chalenge, that some projects have failed because of that.
+## Installing
 
-## Chalenges and Possible solutions
+⚠️ Still in so early development do not have a setup
 
-* The heavy data that videos.
+## Running tests
 
-    * The solution is that any channel have their own server and database to deal with that so will work something like reddit, when the channels have they own site and server and exists a main global site that consumes this server.
+⚠️ Still in so early development do not have a setup
 
-* Can have the problem that some channels can't hadle they huge content and users access so is something to think about.
+## Deployment
 
-    * So will also have the options to integrate with other platforms of videos like you-tube and twitch, discord, etc...
+⚠️ Still in so early development do not have a setup
 
-* Must have easy way to install in the server, the ideal will be in the same way as wordpress.
-    
-    * This is why i choose PHP for back-end of application, the objective is have a compatibily with simple servers and shared servers.
+## Built with
 
-* Users Hardly want change platform
-    
-    * This is way one of the objectives is have a good integrations with others platforms like you-tube, twith, discord, so the user do not have to have a migration of platform and just configure your platform to use the videos of other platform and the system will take care of the rest.
+* [Node.js](https://nodejs.org/en/) - Server javascript
+* [Typescript.js](https://www.typescriptlang.org/) - Typescript language
+* [Express.js](https://expressjs.com/) - Framework for deal with http requests and responses
+* [Vue.js](https://vuejs.org/) - Framework js for the front-end components
+* [Vuetify.js](https://vuetifyjs.com/) - Plugin vue of material desing
+
+## Contributing
+
+Please read the page [Contributing](https://hawk-developments.github.io/you-space/docs/contributing) to see the steps to contribute of project.
+
+⚠️ Still in so early development so do not have a good setup for development
+
+## Versioning
+
+We use [Lerna](https://vuetifyjs.com/) to handle the management of the project
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/hawk-developments/you-space/blob/master/LICENSE) file for details
+
+## Acknowledgments
+
+* The project used typescript in all packages
+* Vue.js Components use the new [@vue/composition-api](https://vue-composition-api-rfc.netlify.com/api.html#setup) semantic because works better with typescript
