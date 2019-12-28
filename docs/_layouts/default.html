@@ -10,8 +10,8 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-	<link href="{{ '/assets/css/style.css' | prepend: site.baseurl }}" rel="stylesheet">
-	<link href="{{ '/assets/fonts/fontawesome/css/all.css' | prepend: site.baseurl }}" rel="stylesheet">
+	<link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+	<link href="{{ '/assets/fonts/fontawesome/css/all.css' | relative_url }}" rel="stylesheet">
 
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.BASE_PATH }}/feed.xml">
 </head>
@@ -44,8 +44,8 @@
 
     </div>
 
-  <script src="{{ '/assets/js/jquery-3.4.1/jquery.min.js' | prepend: site.baseurl }}"></script>
-  <script src="{{ '/assets/js/bootstrap-4.3.1/bootstrap.bundle.min.js' | prepend: site.baseurl }}"></script>
-  <script type="module" src="{{ '/assets/js/app.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/js/jquery-3.4.1/jquery.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/bootstrap-4.3.1/bootstrap.bundle.min.js' | relative_url }}"></script>
+  <script type="module" src="{{ '/assets/js/app.js' | relative_url }}"></script>
 </body>
 </html>

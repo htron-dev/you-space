@@ -11,7 +11,7 @@ exclude:
     {% if doc.layout == "page" %}
       {% unless doc.exclude.sidebar %}
         <li>
-          <a class="nav-link" href="{{ doc.url }}">
+          <a class="nav-link" href="{{ doc.url | relative_url}}">
             {{ doc.title }}
           </a>					
         </li>  
@@ -20,7 +20,7 @@ exclude:
   {% endfor %}
   {% for doc in site.docs %}
     <li>
-      <a class="nav-link" href="{{ doc.url }}">
+      <a class="nav-link" href="{{ doc.url | relative_url }}">
         {{ doc.title }}
       </a>					
     </li>  

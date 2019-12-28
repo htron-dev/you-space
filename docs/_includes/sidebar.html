@@ -11,7 +11,7 @@
 			{% if post.layout == "page" %}	
 				{% unless post.exclude.sidebar %}
 					<li class="{% if page.url == post.url %}active{% endif %}">		
-						<a class="nav-link" href="{{ post.url }}">
+						<a class="nav-link" href="{{ post.url | relative_url }}">
 							{{ post.title }}
 						</a>					
 					</li>
@@ -35,7 +35,7 @@
 					{% for doc in site.[collection.label] %}					
 					{% unless doc.exclude.sidebar %}
 					<li class="{% if doc.url == doc.url %}active{% endif %}">
-								<a class="nav-link" href="{{ doc.url }}">
+								<a class="nav-link" href="{{ doc.url | relative_url}}">
 									{{ doc.title}}
 								</a>					
 							</li>

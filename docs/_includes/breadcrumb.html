@@ -2,7 +2,7 @@
     <ol class="breadcrumb">
         
         <li class="breadcrumb-item">
-            <a href="/">Home</a>
+            <a href="{{ site.url }}">Home</a>
         </li>
         {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
         {% for crumb in crumbs %}
@@ -11,7 +11,7 @@
                     <li class="breadcrumb-item active" aria-current="page">{{ crumb | remove: ".html" | capitalize}}</li>
                 {% else %}
                     <li class="breadcrumb-item">
-                        <a href="/{{ crumb }}">
+                        <a href="{{ crumb | relative_url}}">
                             {{ crumb | remove: ".html" | capitalize}}
                         </a>                                    
                     </li>
