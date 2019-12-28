@@ -1,0 +1,42 @@
+#sidebar {	
+	min-width: 280px;
+	max-width: 280px;
+	min-height: 100vh;
+	transition: all 0.3s;	
+	background-color: $dark;
+	color: #fff;
+	
+	&.hide {
+		margin-left: -280px;
+	}
+
+	.title {
+		a {
+			font-size: 30px;
+			color: $white;
+			text-decoration: none;
+			display: block;
+			margin-bottom: 30px;			
+		}
+	}
+	.menu {
+		li {									
+			a {
+				transition: $transition-base;
+				border-bottom: 1px solid rgba($white, 0.2);
+				text-transform: capitalize;
+				font-size: 0.9rem;
+				padding: 0.7rem 0.4rem;
+				color: $white;
+			}	
+			&.active, &:hover {
+				a {
+					font-weight: bold;				
+				}
+			}
+			ul{
+				padding-left: 10px;
+			}
+		}
+	}
+}
