@@ -21,7 +21,11 @@ const routes = [
     {
         path: "/videos-all",
         component: () => import(/* webpackChunkName: "videos-list" */ "@/views/videos-all/index.vue")
-    }
+    },
+    {
+        path: "/sections/:sectionName",
+        component: () => import(/* webpackChunkName: "sections" */ "@/views/sections/index.vue")
+    },
 ];
 
 const router = new VueRouter({

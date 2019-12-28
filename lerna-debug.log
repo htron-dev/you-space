@@ -1,0 +1,17 @@
+0 silly argv {
+0 silly argv   _: [ 'bootstrap' ],
+0 silly argv   lernaVersion: '3.19.0',
+0 silly argv   '$0': '/home/henrique/.npm-modules/bin/lerna'
+0 silly argv }
+1 notice cli v3.19.0
+2 verbose rootPath /home/henrique/Documents/Trabalho/projetos/atual/you-space/you-space
+3 error Error: EIO: i/o error, write
+3 error     at writeSync (fs.js:603:3)
+3 error     at SyncWriteStream._write (internal/fs/sync_write_stream.js:24:3)
+3 error     at doWrite (_stream_writable.js:461:12)
+3 error     at writeOrBuffer (_stream_writable.js:443:5)
+3 error     at SyncWriteStream.Writable.write (_stream_writable.js:323:11)
+3 error     at EventEmitter.log.write (/home/henrique/.npm-modules/lib/node_modules/lerna/node_modules/npmlog/log.js:271:10)
+3 error     at EventEmitter.<anonymous> (/home/henrique/.npm-modules/lib/node_modules/lerna/node_modules/npmlog/log.js:234:12)
+3 error     at Array.forEach (<anonymous>)
+3 error     at EventEmitter.log.emitLog (/home/henrique/.npm-modules/lib/node_modules/lerna/node_modules/npmlog/log.js:232:28)

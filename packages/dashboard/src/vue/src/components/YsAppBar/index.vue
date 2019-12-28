@@ -1,22 +1,20 @@
 <template>
-  <v-footer
+  <v-app-bar
+    clipped-left
+    dense
     color="blue"
     dark
-    dense
     v-bind="$attrs">
-      You space
-      <v-spacer />
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-  </v-footer>
+      Dashboard
+  </v-app-bar>
 </template>
 
 <script lang="ts">
 import { computed, createComponent } from "@vue/composition-api";
 
 export default createComponent({
-    name: "YsAppFooter",
-    setup ({ value }, { emit }) {      
-
+    name: "YsAppBar",
+    setup ({ value }, { emit }) {
         return {
 
         };

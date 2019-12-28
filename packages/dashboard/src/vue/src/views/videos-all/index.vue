@@ -31,12 +31,11 @@ export default createComponent({
         const state = reactive({
             selectedVideo: "",
             videos: [
-                
+
             ]
         });
 
         const getVideos = async () => {
-
             if (process.env.NODE_ENV === "production") {
                 const request = await fetch("/videos-list");
 
@@ -50,7 +49,6 @@ export default createComponent({
 
         const setVideo = (video: string) => {
             if (process.env.NODE_ENV === "production") {
-
                 state.selectedVideo = `/video/${video}`;
             } else {
                 state.selectedVideo = video;
