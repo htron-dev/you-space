@@ -1,6 +1,6 @@
 {
   "name": "@youspace/common",
-  "version": "0.0.8",
+  "version": "0.0.7",
   "description": "common scripts for the @youspace packages",
   "keywords": [
     "you-space",
@@ -13,12 +13,10 @@
   "types": "dist/index.d.ts",
   "directories": {
     "dist": "dist",
-    "test": "__tests__",
-    "bin": "bin"
+    "test": "__tests__"
   },
   "files": [
     "dist",
-    "bin",
     "tsconfig.common.json",
     "eslint.common.js"
   ],
