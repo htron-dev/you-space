@@ -1,6 +1,6 @@
 {
   "name": "@youspace/common",
-  "version": "0.0.8",
+  "version": "0.0.94",
   "description": "common scripts for the @youspace packages",
   "keywords": [
     "you-space",
@@ -30,13 +30,17 @@
     "url": "git+https://github.com/zzhenryquezz/you-space.git"
   },
   "scripts": {
-    "build": "tsc -b --clean && tsc -b",
+    "build": "npm run clean && tsc -b && tsc -b cli",
     "test": "npm run test:unit && npm run lint",
-    "lint": "eslint src/**/* ",
+    "clean": "tsc -b --clean && rm -rf dist bin",
+    "prepublish": "npm test",
+    "pretest": "npm run build",
+    "lint": "eslint ./**/*.ts ./**/*.js --quiet",
+    "lint:fix": "eslint ./**/*.ts ./**/*.js  --fix",
     "test:unit": "mocha --watch-extensions ts -r ts-node/register __tests__/**/*"
   },
   "bin": {
-    "ys-service": "bin/index.js"
+    "ys-service": "./bin/ys-service.js"
   },
   "bugs": {
     "url": "https://github.com/zzhenryquezz/you-space/issues"
@@ -60,6 +64,7 @@
   },
   "devDependencies": {
     "@types/debug": "^4.1.5",
+    "@types/shelljs": "^0.8.6",
     "@types/sinon": "^7.5.1",
     "sinon": "^8.0.1"
   }

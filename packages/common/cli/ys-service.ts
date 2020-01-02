@@ -1,18 +1,18 @@
 #!/usr/bin/env node
 
-const shelljs = require("shelljs");
-const path = require("path");
-const ysMocha = require("./ys-mocha");
-const ysLint = require("./ys-lint");
+import shelljs from "shelljs";
+import ysMocha from "./ys-mocha";
+import ysLint from "./ys-lint";
+import { Services } from "./types";
 
 /**
  *  Get command line args
- * 
+ *
  *  @example
  *  ys-service test __tests_/
  *  will be: args = ["teste", "__tests_/"]
  */
-function getArgs(){
+function getArgs(): string[]{
     return process.argv.slice(2);
 }
 /**
@@ -20,8 +20,9 @@ function getArgs(){
  *  @example
  *  node_modules/@youspace/common
  */
-function getCurrentPath(){
-    return path.resolve(__dirname, "./../");
+function getBinPath(): string{
+    const binPath = shelljs.exec("npm bin", {silent: true}).stdout.replace("\n", "");
+    return binPath;
 }
 
 /**
@@ -34,27 +35,27 @@ function getCurrentPath(){
  *  ```
  *  =============================================================================================
  */
-function run(){
+function run(): void{
 
     const args = getArgs();
-    
-    const services = {
+
+    const services: Services = {
         "test": ysMocha,
         "lint": ysLint
     };
 
     if (services[args[0]]){
         const service = services[args[0]];
-        
+
         args.splice(0, 1);
 
-        const command = service(getCurrentPath(), args);
+        const command = service(getBinPath(), args);
 
         shelljs.exec(command);
     } else {
-        console.log('\x1b[31m%s\x1b[0m',`Invalid command ${args[0]}`);
-    }    
-   
+        console.error("\x1b[31m%s\x1b[0m",`Invalid command ${args[0]}`);
+    }
+
 }
 
 // call the function

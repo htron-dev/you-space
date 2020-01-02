@@ -14,16 +14,16 @@ import debug from "debug";
  *    ysLogger.debug("Log just in debug", "youspace:common"); *
  * ```
  */
-export class ysLogger {        
+export class ysLogger {
 
     public static info(message: string): void{
-        const logger = pino();        
+        const logger = pino();
         logger.info(message);
-    }    
+    }
 
-    public static debug(message: string, module = "youspace:"): void{        
-        const log = debug(module)
-        log(message)
+    public static debug(message: string, module = "youspace:"): void{
+        const log = debug(module);
+        log(message);
     }
 
 }
@@ -32,7 +32,7 @@ export class ysLogger {
  * @example
  * ```ts
  *  import { ysError } from "@youspace/common";
- * 
+ *
  *  const error = new ysError("Some Error message");
  *
  *  throw error;
@@ -40,6 +40,6 @@ export class ysLogger {
  */
 export class ysError extends Error {
     constructor (message: string) {
-        super(message);        
-    }    
+        super(message);
+    }
 }
