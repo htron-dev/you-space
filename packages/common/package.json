@@ -1,6 +1,6 @@
 {
   "name": "@youspace/common",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "common scripts for the @youspace packages",
   "keywords": [
     "you-space",
@@ -18,7 +18,7 @@
   "files": [
     "dist",
     "tsconfig.common.json",
-    "eslintrc.common.js"
+    "eslint.common.js"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.com/"
