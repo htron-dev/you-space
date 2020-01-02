@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  *  Service to run eslint
  *  This is just a layer of eslint to resolve the @typescript/eslint plugin
@@ -9,18 +11,20 @@
  * ```
  */
 
- module.exports = function (currentPath, args) {
-     const lintPath = `${currentPath}//node_modules/.bin/eslint`
-     /**
+import path from "path";
+
+export default function (binPath: string, args: string[]): string{
+
+    const lintPath = `${binPath}/eslint`;
+
+    /**
      * loop in the args to add the to final command
-     */ 
+     */
     let eslintOptions = "";
-    
+
     args.forEach(arg => eslintOptions += ` ${arg}`);
-    
     // create a string ofr the command
-    const command = `${lintPath} --color --resolve-plugins-relative-to=${currentPath} ${eslintOptions}`;
-    console.log(command)
+    const command = `${lintPath} --color --resolve-plugins-relative-to=${path.resolve(binPath, "../")} ${eslintOptions}`;
 
     return command;
- }
+}
