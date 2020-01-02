@@ -2,11 +2,12 @@
 
 > A Packeage with common funcitons and helpers to use with @youspace packages
 
-## Cli command ys-mocha
-Command to run mocha tests more easy without need to intall directly the packages, all options mocha works with the package
+## ys-service command line
+Command-line helpers, used to run mocha and eslint more easy without need to intall directly the packages, all options mocha and lint works with the packages.
 
 ```shell
-    ys-mocha [mochaOptions] [file(s) path]
+    ys-service test [mochaOptions] [file(s) path]
+    ys-service lint [eslintOptions] [file(s) path]
 ```
 
 ## Tsconfig
@@ -45,3 +46,8 @@ const error = new ysError("Some Error message");
 throw error;
 
 ```
+
+### About eslint.common.js
+For now i will use this method insted of create a @youspace/eslint-config, because if I do that eslint eslint will require the instalations of plugins of @typescpt-eslint, this is something i wanna avoid in main project to be more clean.
+
+But i see some issues in eslint rfs repository and they have some good ideas to resolve this problem if they are accepted, so for now I will wait for this features.

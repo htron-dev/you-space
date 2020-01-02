@@ -1,6 +1,6 @@
 {
   "name": "@youspace/common",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "common scripts for the @youspace packages",
   "keywords": [
     "you-space",
@@ -17,7 +17,8 @@
   },
   "files": [
     "dist",
-    "tsconfig.common.json"
+    "tsconfig.common.json",
+    "eslintrc.common.js"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.com/"
@@ -28,11 +29,12 @@
   },
   "scripts": {
     "build": "tsc -b --clean && tsc -b",
-    "test": "mocha -r ts-node/register __tests__/**/*",
-    "test:watch": "mocha --watch --watch-extensions ts -r ts-node/register __tests__/**/*"
+    "test": "npm run test:unit && npm run lint",
+    "lint": "eslint src/**/* ",
+    "test:unit": "mocha --watch-extensions ts -r ts-node/register __tests__/**/*"
   },
   "bin": {
-    "ys-mocha": "bin/ys-mocha.js"
+    "ys-service": "bin/index.js"
   },
   "bugs": {
     "url": "https://github.com/zzhenryquezz/you-space/issues"
@@ -42,8 +44,11 @@
     "@types/mocha": "^5.2.7",
     "@types/node": "^13.1.1",
     "@types/pino": "^5.15.1",
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
     "chai": "^4.2.0",
     "debug": "^4.1.1",
+    "eslint": "^6.8.0",
     "mocha": "^6.2.2",
     "pino": "^5.15.0",
     "pino-colada": "^1.5.0",

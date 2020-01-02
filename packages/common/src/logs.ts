@@ -20,7 +20,8 @@ export class ysLogger {
         const logger = pino();        
         logger.info(message);
     }    
-    public static debug(message: string, module: string = "youspace:"): void{        
+
+    public static debug(message: string, module = "youspace:"): void{        
         const log = debug(module)
         log(message)
     }
