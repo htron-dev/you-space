@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "outDir": "../dist",
+      "composite": true,
+      "strict": true,
+      "types": [
+        "@types/node",
+      ]
+    },
+    "include": ["./**/**.ts", "types/nuxt.d.ts"]
+  }
+  
