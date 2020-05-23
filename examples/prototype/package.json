@@ -1,0 +1,27 @@
+{
+  "name": "prototype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": " npm run build && node .",
+    "dev": "NODE_ENV=development npx nodemon -e ts --exec npm start",
+    "test": "ys-service test ./__tests__/*",
+    "lint": "ys-service lint src/**/*",
+    "build": "npm run clean && tsc",
+    "clean": "tsc -b --clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@youspace/common": "file:../../packages/common",
+    "@youspace/dashboard": "file:../../packages/dashboard",
+    "eslint": "^6.8.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^12.12.21"
+  }
+}
