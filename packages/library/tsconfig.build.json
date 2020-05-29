@@ -1,0 +1,10 @@
+{
+    "extends": "@youspace/common/tsconfig.common.json",
+    "compilerOptions": {
+        "declaration": true,
+        "outDir": "dist",
+        "moduleResolution": "node"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["sandbox", "node_modules",  "__tests__"]
+}
