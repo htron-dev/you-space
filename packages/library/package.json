@@ -24,7 +24,7 @@
   "scripts": {
     "build": "npm run clean && tsc -p tsconfig.build.json",
     "clean": "rm -rf dist && tsc -b --clean",
-    "dev": "ts-node sandbox/index.ts",
+    "dev": "ts-node-dev --no-notify sandbox/index.ts",
     "test": "ys-service test __tests__/*"
   },
   "bugs": {
@@ -34,14 +34,15 @@
     "@youspace/common": "0.0.94",
     "express": "^4.17.1",
     "multer": "^1.4.2",
-    "serve-index": "^1.9.1"
+    "uuid": "^8.1.0"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.0",
     "@types/express": "^4.17.6",
     "@types/multer": "^1.4.3",
-    "@types/serve-index": "^1.7.30",
+    "@types/uuid": "^8.0.0",
     "body-parser": "^1.19.0",
-    "ts-node": "^8.10.1"
+    "ts-node": "^8.10.1",
+    "ts-node-dev": "^1.0.0-pre.44"
   }
 }
