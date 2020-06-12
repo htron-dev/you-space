@@ -1,0 +1,7 @@
+{
+    "extends": "@youspace/common/tsconfig.common.json",
+    "compilerOptions": {
+        "declaration": true,
+        "outDir": "dist"
+    }
+}
