@@ -1,10 +1,17 @@
-import express, { Router } from "express";
-import { VideoController } from "./controller/video-controller";
+import { Router } from "express";
+import bodyParser from "body-parser";
+
+import errorHandler from "./error-handler";
+import adminRoutes from "./admin.routes";
 
 const router = Router();
 
-const controller = new VideoController();
+router.use(bodyParser.json());
 
-router.post("/video", controller.add.bind(controller));
+router.use(bodyParser.urlencoded( { extended: false } ));
+
+router.use("/admin", adminRoutes);
+
+router.use(errorHandler);
 
 export default router;
