@@ -1,2 +1,0 @@
-export * from "./vue-wind";
-export * from "./composition-api";
