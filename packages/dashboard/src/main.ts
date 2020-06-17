@@ -4,6 +4,12 @@ import store from './store'
 import router from './router'
 import './plugins'
 
+import { createFakeServer } from "@/mirage";
+
+if (process.env.NODE_ENV !== "production") {
+  createFakeServer({ environment: "development" });
+}
+
 Vue.config.productionTip = false
 
 new Vue({

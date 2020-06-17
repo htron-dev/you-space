@@ -5,7 +5,7 @@
       <app-drawer></app-drawer>
     </div>
 
-    <div slot="top-bar" class="border-b">top-bar</div>
+    <app-toolbar slot="top-bar" />
 
     <router-view />
 

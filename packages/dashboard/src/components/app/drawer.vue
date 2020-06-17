@@ -45,12 +45,16 @@ export default defineComponent({
             name: 'sub-item'
           }
         ]
+      },
+      {
+        name: 'Library',
+        to: '/'
       }
-    ])
+    ]);
     return {
       sections
-    }
+    };
   }
-})
+});
 
 </script>
