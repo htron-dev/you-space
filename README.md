@@ -5,7 +5,7 @@ Opensource cms for media content management.
   
 </div>
 
-## About the projetc
+## About the project
 
 This is a project to have a more freedom and easy way to share and manage media content in the internet.
 
