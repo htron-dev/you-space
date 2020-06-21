@@ -1,60 +1,58 @@
+<div align="center">
+
 # You-space
-Platform opensource to be an alternative of Youtube to deal with videos and channels.
+Opensource cms for media content management.
+  
+</div>
 
-Is not like youtube is more like a wordpress of videos.
+## About the projetc
 
-> **Important:** the ideia is not beat the mainstream platforms but gives to the creators a more freedom way to share your content with your public, this is why I also will plannig some a integration with these platforms in the future, to the creator have the best of both options.
+This is a project to have a more freedom and easy way to share and manage the media content in the internet.
 
-⚠️ Warning: in so early development
+The ideia is not to leave the other medias, you can do it if you want but one of the goals is have something like a global management of all your sources of media, like videos in youtube and lives in twitch, so you can get the better of other platforms.
 
-## Getting started
+The cms will have a option to set the source of your content, that yout can define of where the videos will came, the ideia is have 3 options:
 
-Still do not have a setup ready, i needed finish some of the packages before have a good development enviroment.
+- Use your own host service as a source
+- Use some external app like youtube, twitch
+- Use both of them
 
-But if you wanna take a look at the packages, they work individually so you can play with they.
+"If works" this will get a lot of benefits like:
 
-> Tip: all ready packages have a readmen with the use steps to use
+- Infinite uploads space of google
+- No need to migrate your videos from other platfort.
+- Easy to test using with your current content in other platforms
+- You can use your host instace to upload video that do not agree with polics of some other platform, but still is in the same place.
 
-## Prerequisites
+## Usefull links
+ - [mind-map](https://whimsical.com/V5gXgaUtB6jYFbwKyUghtDl)
+ - [design](https://www.figma.com/file/Bo7lCQOldD2yJLeB3IolnY/you-space-dashboard?node-id=0%3A1)
+ 
+## Status
 
-⚠️ Still in so early development do not have a setup
+| Main feature | status |
+| -------------| -------|
+| dashboard      | in development |
+| host source    | in development |
+| youtube source | in development |
+| twitch source  | in development |
 
-## Installing
+## Stack
 
-⚠️ Still in so early development do not have a setup
-
-## Running tests
-
-⚠️ Still in so early development do not have a setup
-
-## Deployment
-
-⚠️ Still in so early development do not have a setup
-
-## Built with
-
-* [Node.js](https://nodejs.org/en/) - Server javascript
-* [Typescript.js](https://www.typescriptlang.org/) - Typescript language
-* [Express.js](https://expressjs.com/) - Framework for deal with http requests and responses
-* [Vue.js](https://vuejs.org/) - Framework js for the front-end components
-* [Vuetify.js](https://vuetifyjs.com/) - Plugin vue of material desing
+* [Node.js](https://nodejs.org/en/)
+* [Typescript.js](https://www.typescriptlang.org/)
+* [Express.js](https://expressjs.com/)
+* [Vue.js](https://vuejs.org/)
+* [Vue-wind](https://github.com/htron-dev/vue-wind)
 
 ## Contributing
-
-Please read the page [Contributing](https://hawk-developments.github.io/you-space/docs/contributing) to see the steps to contribute of project.
-
-⚠️ Still in so early development so do not have a good setup for development
+The project is still in early stages and do not have a good flow to contrubuiting, but you can take a look in the [issues](https://github.com/htron-dev/you-space/issues) of project and help with ideias and criticism.
 
 ## Versioning
 
-We use [Lerna](https://vuetifyjs.com/) to handle the management of the project
+We use [Lerna](https://github.com/lerna/lerna) to handle the management of the project
 
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/hawk-developments/you-space/blob/master/LICENSE) file for details
-
-## Acknowledgments
-
-* The project used typescript in all packages
-* Vue.js Components use the new [@vue/composition-api](https://vue-composition-api-rfc.netlify.com/api.html#setup) semantic because works better with typescript
