@@ -7,7 +7,7 @@ Opensource cms for media content management.
 
 ## About the projetc
 
-This is a project to have a more freedom and easy way to share and manage the media content in the internet.
+This is a project to have a more freedom and easy way to share and manage media content in the internet.
 
 The ideia is not to leave the other medias, you can do it if you want but one of the goals is have something like a global management of all your sources of media, like videos in youtube and lives in twitch, so you can get the better of other platforms.
 
