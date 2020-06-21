@@ -3,8 +3,6 @@
 # You-space
 Opensource cms for media content management.
 
-![you-space-dashboard-home](/screenshots/you-space-dashboard-home.png)
-
 </div>
 
 ## About the project
