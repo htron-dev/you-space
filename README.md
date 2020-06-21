@@ -9,11 +9,11 @@ Opensource cms for media content management.
 
 This is a project to have a more freedom and easy way to share and manage media content in the internet.
 
-The ideia is not to leave the other medias, you can do it if you want but one of the goals is have something like a global management of all your sources of media, like videos in youtube and lives in twitch, so you can get the better of other platforms.
+The ideia is not to leave the others, you can do it if you want but one of the goals is have a global management of all sources of media that you can have, like videos that came from youtube and lives that came from twitch.
 
-The cms will have a option to set the source of your content, that yout can define of where the videos will came, the ideia is have 3 options:
+In the cms will be possible to set the source of your content, that yout can define of where the site will get the videos, so you can:
 
-- Use your own host service as a source
+- Use your own host service as a source of videos
 - Use some external app like youtube, twitch
 - Use both of them
 
@@ -22,7 +22,7 @@ The cms will have a option to set the source of your content, that yout can defi
 - Infinite uploads space of google
 - No need to migrate your videos from other platfort.
 - Easy to test using with your current content in other platforms
-- You can use your host instace to upload video that do not agree with polics of some other platform, but still is in the same place.
+- You can use your host instace to upload videos that do not agree with politics of the platform like videos not family-friendly, but still the users can see in the same place.
 
 ## Usefull links
  - [mind-map](https://whimsical.com/V5gXgaUtB6jYFbwKyUghtDl)
